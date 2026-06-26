@@ -3,6 +3,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
+import https from "https";
 import dotenv from "dotenv";
 import productRoutes from "./routes/ProductRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
@@ -31,4 +32,8 @@ mongoose.connect(process.env.MONGO_URI)
     console.log("MongoDB Connected ✅");
     app.listen(8000, () => console.log("Server running on port 8000 ✅"));
   })
-  .catch((err) => console.log(err));``
+  .catch((err) => console.log(err));
+
+  setInterval(() => {
+    https.get("https://handbags-backend.onrender.com");
+  }, 840000);
