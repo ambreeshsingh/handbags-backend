@@ -1,7 +1,7 @@
 
 
 import express from "express";
-import Order from "../models/Order.js";  
+import Order from "../models/Product.js";
 // handbag-backend/routes/orderRoutes.js
 
 const router = express.Router();
