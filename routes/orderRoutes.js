@@ -1,15 +1,7 @@
-// import express from "express";
-// const router = express.Router();
 
-// // placeholder route
-// router.get("/", (req, res) => {
-//   res.json({ message: "Order routes working ✅" });
-// });
-
-// export default router;
 
 import express from "express";
-import Order from "../models/Product.js";
+import Order from "../models/Order.js";  
 // handbag-backend/routes/orderRoutes.js
 
 const router = express.Router();
